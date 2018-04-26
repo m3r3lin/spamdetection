@@ -12,7 +12,7 @@
 
 import os
 from collections import Counter
-
+import numpy as np
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.stop_words import ENGLISH_STOP_WORDS
 from sklearn.metrics import confusion_matrix
@@ -185,7 +185,6 @@ tn, fp, fn, tp = confusion_matrix(y_test, result3).ravel()
 # In[9]:
 
 
-import numpy as np
 
 
 def plot_confusion_matrix(cm,
